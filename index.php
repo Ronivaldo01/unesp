@@ -8,9 +8,9 @@
     <title>Teste de Fundunesp</title>
     <style>
         
-        .retangulo-second{padding:12px;display:inline-block;margin-top:-7px;}
-        .retangulo-first{padding:12px;display:inline-block;margin-top:-7px;border:solid 1px;}
-        .retangulo-first:first-child{background: #000 !important;}
+        .retangulo-second{margin-top:-7px;width: 30px;height: 35px;border:solid 1px #000;}
+        .retangulo-first{padding:7px;margin-top:-7px;border:solid 1px #000;width: 30px;height: 35px;}
+        /*.retangulo-first:first-child{background: #000 !important;}*/
        
     </style>
 </head>
@@ -30,22 +30,22 @@
         </form>
             <br><br>
         <?php
-         echo "<input type='submit' name='btn-triangulo' value='1' style='background:black;color:#FFF;padding:12px;margin-bottom:7px;'><br> ";
+         echo "<input type='submit' name='btn-triangulo' value='1' style='padding:7px;border:none;background: #000;color:#FFF;margin-bottom:7px;width:30px;height:35px;'><br> ";
         
          
         
         $i = 2;
         while($i <= $number){
-                    $x = 1;
+                    $x = 01;
                     while($x < $i -1){
-                        echo"<input type='submit' class='retangulo-first' name='btn-triangulo' value=''>";
+                        echo"<input type='submit' class='retangulo-first' style='width: 30px;height: 35px'; name='btn-triangulo' value=''>";
                         ++$x; 
                        
                     } 
                   
-                    echo"<input type='submit' class='retangulo-first' name='btn-triangulo' style='background:#000;display:inline-block'; value=''>";    
+                    echo"<input type='submit' class='retangulo-first' name='btn-triangulo' style='width: 30px;height: 35px;background:#000;display:inline-block'; value=''>";    
                 
-            echo "<input type='submit' class='retangulo-second' name='btn-triangulo' value='$i' style='float:left;background:#FFF;color:#000;'><br>";
+            echo "<input type='submit' class='retangulo-second' name='btn-triangulo' value='$i' style='padding-bottom:5px;float:left;background:#FFF;color:#000;'><br>";
           ++$i;
         }
        
